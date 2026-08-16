@@ -1,30 +1,30 @@
 # 📊 Lead Scoring Data Analysis & Interactive Dashboard (Power BI)
 
 ## 📌 Project Overview
-An end-to-end data analytics portfolio project built in **Power BI Desktop** analyzing **9,240 customer lead records**[cite: 3]. This project evaluates acquisition channel performance, candidate demographics, conversion rates, and course motivators to assist sales and marketing optimization[cite: 3].
+An end-to-end data analytics portfolio project built in **Power BI Desktop** analyzing **9,240 customer lead records**[cite: 3]. This analysis focuses specifically on core acquisition channels: **Google**, **Reference**, and **Direct Traffic** to evaluate channel efficiency, candidate demographics, and high-conversion segments[cite: 3].
 
 ---
 
 ## 🔑 Key Analytical Insights
-* **Primary Acquisition Channels:** **Google** leads channel volume with **2.87K leads (31.04%)**[cite: 3], followed by **Direct Traffic** (**2.54K leads / 27.52%**)[cite: 3] and **Olark Chat** (**1.755K leads / 18.99%**).
-* **High-Converting Referral Channel:** While **Reference leads** account for 534 total leads[cite: 3], they deliver an exceptional **91.76% conversion rate**.
-* **Demographic Target Group:** **85.94% of categorized leads (5,600 leads)** are **Unemployed** candidates seeking career transition[cite: 3], followed by **Working Professionals (10.83% / 706 leads)**[cite: 3].
-* **High-Intent Working Professionals:** **Working Professionals** show a **91.64% conversion rate**, highlighting them as the most qualified segment for premium enrollments.
-* **Core Motivator:** Over **99.9% of responsive candidates** select **"Better Career Prospects"** as their primary reason for choosing a course[cite: 3].
+* **Google Acquisition Volume:** **Google** is the leading acquisition channel overall, accounting for **2.87K leads (31.04% share)** with **1,147 conversions (39.99% conversion rate)**[cite: 3].
+* **Direct Traffic Channel:** **Direct Traffic** represents **2.54K leads (27.52% share)** and yields **818 conversions (32.17% conversion rate)**[cite: 3].
+* **High-Converting Reference Channel:** **Reference leads** deliver the highest conversion performance by far, generating **490 conversions out of 534 leads (91.76% conversion rate)**[cite: 3].
+* **Core Channel Comparison:** While **Google** and **Direct Traffic** drive the bulk of inbound lead volume (~58.5% combined)[cite: 3], **Reference leads** convert at nearly 3x the rate of organic/direct channels[cite: 3].
 
 ---
 
 ## 🛠️ Data Engineering & Power Query Pipeline
-* **Data Cleaning & Standardization:** Used **Power Query (M Engine)** to map missing (`null`), blank, and placeholder inputs (`"Select"`) to standardized `"N/A"` labels[cite: 3].
-* **Data Modeling & Calculations:** Modeled relationship schemas and created calculated measures for lead counts and conversion rates across categories[cite: 3].
-* **Visual Interface:** Built single-metric **Card visual callouts**[cite: 3], clustered bar charts, demographic pie charts[cite: 3], and responsive slicers for dynamic filtering.
+* **Data Cleaning & Standardization:** Standardized raw inputs, missing values (`null`), and `"Select"` placeholders across Google, Direct, and Reference channel records using **Power Query (M Engine)**[cite: 3].
+* **Channel Metrics Calculation:** Modeled DAX measures to isolate volume, conversion counts, and conversion percentages across target channels[cite: 3].
+* **Visual Dashboards:** Constructed comparative bar charts and card callouts dedicated to core acquisition streams[cite: 3].
 
 ---
 
 ## 📁 Repository Structure
 ```text
-├── Lead_Scoring.csv                    # Raw dataset (9,240 rows × 37 columns)
-├── Lead_Scoring_Analysis.pbix          # Master Power BI Desktop report
-├── Lead_Scoring_Template.pbit          # Lightweight Power BI template file
-├── Lead_Scoring_Data_Analysis_Final.pdf # Exported PDF analysis report
-└── README.md                           # Project documentation
+├── Lead_Scoring.csv                     # Raw dataset (9,240 rows × 37 columns)
+├── Lead_Scoring_Analysis.pbix           # Master Power BI Desktop report
+├── Lead_Scoring_Template.pbit           # Lightweight Power BI template file
+├── Lead_Scoring_Data_Analysis_Final.pdf  # Technical dashboard preview PDF
+├── Lead_Scoring_Business_Analysis.pdf   # Channel analysis report (Google, Reference, Direct)
+└── README.md                            # Project documentation
