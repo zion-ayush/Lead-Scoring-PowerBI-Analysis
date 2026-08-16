@@ -23,8 +23,7 @@ An end-to-end data analytics portfolio project built in **Power BI Desktop** ana
 ## 📁 Repository Structure
 ```text
 ├── Lead_Scoring.csv                     # Raw dataset (9,240 rows × 37 columns)
-├── Lead_Scoring_Analysis.pbix           # Master Power BI Desktop report
+├── Lead_Scoring_Analysis_v3.pdf         # Channel analysis report (Google, Reference, Direct)
 ├── Lead_Scoring_Template.pbit           # Lightweight Power BI template file
-├── Lead_Scoring_Data_Analysis_Final.pdf  # Technical dashboard preview PDF
-├── Lead_Scoring_Business_Analysis.pdf   # Channel analysis report (Google, Reference, Direct)
+├── Lead_Scoring_Data_Analysis_Final.pdf # Technical dashboard preview PDF
 └── README.md                            # Project documentation
